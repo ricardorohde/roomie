@@ -1,0 +1,75 @@
+.container-fluid{
+    padding: 0px 70px;
+}
+
+.containerMinhasVagas{
+    padding: 5em 0;
+}
+
+.boxVaga{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.boxVaga .boxVagaHeader .imagem, .boxVaga .boxVagaHeader .imagemIndis{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.boxVaga .boxVagaHeader .imagem{
+    background: #000;
+}
+
+.boxVaga .boxVagaHeader .imagemIndis i{
+    margin: 80px auto;
+}
+
+.boxVaga .boxVagaHeader .imagem img{
+    margin: 0 auto;  
+}
+
+@media screen and (min-width: 992px) {
+    
+    .boxVaga .boxVagaHeader .imagem img{
+        height: 178px;
+        max-width: 100%;
+    }
+    
+    .boxVaga .boxVagaHeader .imagem, .boxVaga .boxVagaHeader .imagemIndis{
+        height: 180px;
+        max-width: 100%;
+    }
+}
+
+.boxVaga .boxVagaHeader .title{
+    text-transform: capitalize;
+}
+
+.boxVaga .boxVagaBody{
+    margin: 20px auto;
+}
+
+.boxVagaFooter{
+    margin-top: 15px;
+}
+
+.boxVagaFooter .btnAcoes{
+    text-align: center;
+    width: 100%;
+}
+
+.boxVagaFooter .btnAcoes .btn{
+    width: 30%;
+    padding: 9px 7px;
+    margin: 0;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+    border-radius: 0;
+    font-size: 16px;
+    background: #f8f8f8;
+    color: black;
+}

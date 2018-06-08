@@ -1,0 +1,260 @@
+.container-fluid{
+    margin: auto;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    background: #F5F5F5;
+}
+
+.TopoCadastroVagas{
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Montserrat', serif;
+    background: #fff;
+}
+
+.pEtapas{
+    min-height: 50px;
+}
+
+#indicadorEtapas{
+    width: 100%;
+    padding-bottom: 20px;
+    background: #fff;
+    text-align: center
+}
+
+/*Hover buttun indicador etapa*/
+/*Animação*/
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+@keyframes hvr-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+/* / Animação*/
+#indicadorEtapas button {
+    border-radius: 50px;
+    padding: 20px;
+    width: 63px;
+    border: 1px solid #aaa;
+    background: #fff;
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.25);
+    margin: 0 20px;  
+    -webkit-transform: translateZ(0);
+    outline: none;
+}
+#indicadorEtapas button:before {
+    content: '';
+    border-radius: 50px;
+    position: absolute;
+    border: 1px solid #aaa;
+    top: -1.5px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+}
+#indicadorEtapas button:hover:before, #indicadorEtapas button:focus:before, #indicadorEtapas button:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+}
+/* / Hover buttun indicador etapa*/
+
+#indicadorEtapas .btnEtapaActive{
+    background: #ccc;
+}
+
+.divFormCadastroVagas{
+    margin: auto;
+    width: 867px;
+    min-height: 340px;
+}
+
+.containerFormCadastroVagas{
+    
+}
+
+.formCadastroVagasTitle{
+    font-size: 18px;
+    width: 353px;
+    display: inline-block;
+    padding: 20px 27px;
+    text-align: right;
+    margin: 10px;
+}
+
+.btn-group i{
+    margin-right: 3px;
+    width: 18.297px;
+}
+.btn-group button, .titleBtnGroup, .btnValor, .avancar, .voltar, .salvar{
+    float: left;
+    margin: 0;
+    padding: 20px 27px;
+    background: white;
+    color: #565a5c;
+    display: inline-block;
+    margin-bottom: 0;
+    border: 1px solid #aaa;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: normal;
+    border-radius: 0;
+    font-size: 16px;
+    margin-left: -1px;
+}
+.btn-group .btn{
+    outline: none;
+}
+.btn-group .btn:active{
+    outline: none;
+}
+.titleBtnGroup{
+    background-color: #f5f5f5;
+}
+
+.btnValor{
+    padding: 18px 27px;
+}
+.inputsButtons{
+    border: 1px solid #aaa;
+    margin: 0;
+    width: 100px;
+}
+.inputsButtons:focus{
+    outline: none;
+}
+#cep{
+    width: 200px;
+}
+#estado, #cidade, #bairro, #rua{
+    width: 350px;
+}
+
+#etapa3 .row{
+    margin: 9px auto;
+}
+
+#etapa3 .container-fotos{
+    margin: 50px 0 70px 0;
+    padding: 15px;
+    border: 1px solid #bbb;
+    background: #fff;
+}
+
+#etapa3 .fotos{
+    background: white;
+    color: #565a5c;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    width: 100%;
+    height: 157px;
+    cursor: pointer;
+    border: 2px dashed #bbb;
+    border-radius: 5px;
+    padding: 0;
+}
+
+#etapa3 #fotos-enviadas .container-fotos-enviadas{
+    margin: 0 -5px;
+}
+
+#etapa3 #fotos-enviadas .container-fotos-enviadas .container-foto-enviada{
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+#etapa3 #fotos-enviadas .container-fotos-enviadas .foto-enviada{
+    height: 100px;
+    max-width: 250px;
+}
+
+#modal-imagem .modal-dialog{
+    max-width: 1000px;
+    width: auto;
+}
+
+#modal-imagem .modal-dialog .modal-header{
+    padding: 0 15px;
+    margin: 20px auto;
+    background: none;
+}
+
+#modal-imagem .modal-dialog .modal-header .close{
+    color: red;
+}
+
+#modal-imagem .modal-dialog .modal-content-img{
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+#modal-imagem .modal-dialog .modal-content-img img{
+    margin: 0 auto;
+}
+
+#etapa3 .fotos i{
+    margin: 69px auto;
+}
+
+#etapa3 #divImagem1{
+    margin-bottom: 8px;
+}
+
+#indicadoresEtapas{
+    cursor: pointer;
+}
+
+#etapa1 #indicadoresEtapas{
+    margin: 20px;
+}
+
+#etapa2 #indicadoresEtapas{
+    margin: 20px 62px 20px 156px;
+}
+
+#etapa4 #indicadoresEtapas{
+    margin: 20px 62px 20px 156px;
+}
+
+.salvar, .avancar, .voltar{
+    background: #e94e38;
+    box-shadow: 0 4px #c1412e;
+    color: #fff;
+    border: 0;
+}
+
+.avancar, .salvar{
+    float: right;
+}
+
+.voltar{
+    float: left;
+}
+
+.container-fluid .row{
+    margin: 0;
+}
+
+/* Modal text area */
+textarea{
+    width: 100%; 
+    height: 350px;
+}
+/* / Modal text area */
